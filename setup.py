@@ -1,10 +1,15 @@
 from distutils.core import setup
 
+with open("README.rst", "r", encoding="utf-8") as f:
+    README = f.read()
+
 setup(
   name = 'easy_api_builder',         
   packages = ['easy_api_builder'], 
   version = '0.1',     
-  license='MIT',     
+  license='MIT', 
+  long_description=README,
+  long_description_content_type='text/x-rst',
   package_data={
         'easy_api_builder': ['templates/*']
   },
