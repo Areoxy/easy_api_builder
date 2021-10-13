@@ -1,9 +1,5 @@
 from distutils.core import setup
 
-
-with open("README.rst", "r", encoding="utf-8") as f:
-    README = f.read()
-
 setup(
   name = 'easy_api_builder',         
   packages = ['easy_api_builder'], 
@@ -12,8 +8,6 @@ setup(
   package_data={
         'easy_api_builder': ['templates/*']
   },
-  long_description=README,
-  long_description_content_type='text/x-rst',
   include_package_data=True,   
   description = 'easy_api_builder is an easy way to create you own API in python', 
   install_requires = "Flask",
