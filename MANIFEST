@@ -1,0 +1,5 @@
+setup.py
+easy_api_builder\APIbuilder.py
+easy_api_builder\__init__.py
+easy_api_builder\templates\404.html
+easy_api_builder\templates\index.html
