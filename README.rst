@@ -12,7 +12,7 @@ Required modules --> Flask, requests
 Documentation
 -------------
 
-Make an API with easy\_api\_builder:
+Make an API with easy\_api\_builder
 
 .. code:: py
     from easy_api_builder.builder import apiBuilder
@@ -28,7 +28,7 @@ Make an API with easy\_api\_builder:
     builder.start(port=80)
 
 
-Make a Documentation Page for your API:
+Make a Documentation Page for your API
 
 .. code:: py
     # Import the required Packages
@@ -54,7 +54,7 @@ Make a Documentation Page for your API:
     # Start the API on defualt Port 80
     builder.start(port=80)
   
-Note: You can create only a Documentation Page too:
+Note: You can create only a Documentation Page too
 
 .. code:: py
     # Import the Required Packages
