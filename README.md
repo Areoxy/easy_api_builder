@@ -13,8 +13,8 @@ Documentation
 
 Make an API with easy\_api\_builder:
 
-``` {.sourceCode .py
- from easy_api_builder.builder import apiBuilder}
+```py
+from easy_api_builder.builder import apiBuilder
 json_response = \
 {
     "easy_api_builder.Version": 0.1,
@@ -28,8 +28,8 @@ builder.start(port=80)
 
 Make a Documentation Page for your API:
 
-``` {.sourceCode .py
- # Import the required Packages}
+```py
+# Import the required Packages
 from easy_api_builder.builder import apiBuilder
 
 json_response = \
@@ -54,9 +54,9 @@ builder.start(port=80)
 
 Note: You can create only a Documentation Page too:
 
-``` {.sourceCode .py
- # Import the Required Packages
- from easy_api_builder.builder import apiBuilder}
+```py
+# Import the Required Packages
+from easy_api_builder.builder import apiBuilder
 # Define the apiBuilder
 
 builder = apiBuilder()
