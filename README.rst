@@ -9,7 +9,7 @@ Requiremnets: <= python 3.6
 
 Required modules --> Flask, requests
 
-.. Code:: py
+.. Code:: python
       from easy_api_builder.builder import apiBuilder, easyRequest
 
       json_response = \
