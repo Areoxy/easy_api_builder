@@ -9,7 +9,7 @@ Requiremnets: <= python 3.6
 
 Required modules --> Flask
 
-.. code-block:: python
+.. code:: python
    :emphasize-lines: 3,5
    from easy_api_builder.builder import apiBuilder, easyRequest
 
