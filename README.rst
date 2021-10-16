@@ -7,7 +7,7 @@ An Python Package for easily create APIs in Python.
 
 Requiremnets: <= python 3.6
 
-Required modules --> Flask, requests
+Required modules --> Flask
 
 .. code-block:: python
    :emphasize-lines: 3,5
