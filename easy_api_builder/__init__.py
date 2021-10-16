@@ -1,1 +1,1 @@
-from .builder import apiBuilder
+from .builder import apiBuilder, easyRequest
