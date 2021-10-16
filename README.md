@@ -1,3 +1,5 @@
+[![Downloads](https://static.pepy.tech/personalized-badge/easy-api-builder?period=total&units=international_system&left_color=black&right_color=blue&left_text=Downloads)](https://pepy.tech/project/easy-api-builder)
+
 Easy-API-Builder
 =========
 
