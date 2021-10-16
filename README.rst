@@ -1,5 +1,4 @@
-Easy\_API\_Builder
-==================
+Easy\_API\_Builder =========
 
 An Python Package for easily create APIs in Python.
 
@@ -7,72 +6,70 @@ An Python Package for easily create APIs in Python.
 
 Requiremnets: <= python 3.6
 
-Required modules --> Flask, requests 
+Required modules --> Flask, requests
 
 Documentation
--------------
+=============
 
-Make an API with easy\_api\_builder
+Make an API with easy\_api\_builder:
 
-.. code:: py
-    from easy_api_builder.builder import apiBuilder
+| \`\`\` {.sourceCode .py from easy\_api\_builder.builder import
+apiBuilder} json\_response =
+| { "easy\_api\_builder.Version": 0.1, "downloads": "200+" }
 
-    json_response = \
-    {
-        "easy_api_builder.Version": 0.1,
-        "downloads": "200+"
-    }
+builder = apiBuilder() builder.create\_get\_api(json=json\_response,
+url="/") builder.start(port=80) \`\`\`
 
-    builder = apiBuilder()
-    builder.create_get_api(json=json_response, url="/")
-    builder.start(port=80)
+Make a Documentation Page for your API:
 
+\`\`\` {.sourceCode .py # Import the required Packages} from
+easy\_api\_builder.builder import apiBuilder
 
-Make a Documentation Page for your API
+| json\_response =
+| { "easy\_api\_builder.Version": 0.1, "downloads": "200+" }
 
-.. code:: py
-    # Import the required Packages
+Define the apiBuilder
+=====================
 
-    from easy_api_builder.builder import apiBuilder
+builder = apiBuilder()
 
-    json_response = \
-    {
-        "easy_api_builder.Version": 0.1,
-        "downloads": "200+"
-    }
+Create a GET API
+================
 
-    # Define the apiBuilder
+builder.create\_get\_api(json=json\_response, path="/")
 
-    builder = apiBuilder()
+Create a Documentation Page for the API
+=======================================
 
-    # Create a GET API
-    builder.create_get_api(json=json_response, path="/")
+builder.create\_docs(sitename="Cocumentation", sitedescription="Official
+Documentation for easy\_api API", path="/docs", docs="How to use our
+API? etc...")
 
-    # Create a Documentation Page for the API
-    builder.create_docs(sitename="Cocumentation", sitedescription="Official Documentation for easy_api API", path="/docs", docs="How to use our API? etc...")
+Start the API on defualt Port 80
+================================
 
-    # Start the API on defualt Port 80
-    builder.start(port=80)
-  
-Note: You can create only a Documentation Page too
+builder.start(port=80) \`\`\`
 
-.. code:: py
-    # Import the Required Packages
-    from easy_api_builder.builder import apiBuilder
+Note: You can create only a Documentation Page too:
 
-    # Define the apiBuilder
+\`\`\` {.sourceCode .py # Import the Required Packages from
+easy\_api\_builder.builder import apiBuilder} # Define the apiBuilder
 
-    builder = apiBuilder()
+builder = apiBuilder()
 
-    # Create a Documentation Page
-    builder.create_docs(sitename="Cocumentation", sitedescription="Official Documentation for easy_api API", path="/docs", docs="How to use our API? etc...")
+Create a Documentation Page
+===========================
 
-    # Start the API on defualt Port 80
-    builder.start(port=80)
+builder.create\_docs(sitename="Cocumentation", sitedescription="Official
+Documentation for easy\_api API", path="/docs", docs="How to use our
+API? etc...")
 
+Start the API on defualt Port 80
+================================
+
+builder.start(port=80) \`\`\`
 
 You can change the path. For example "/api/v3"
-
 
 **How to customize the Documentation- and Error Page?**
 
