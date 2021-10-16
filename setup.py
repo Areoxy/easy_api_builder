@@ -1,7 +1,7 @@
 from distutils.core import setup
 
 
-with open("README.rst", "r", encoding="utf-8") as f:
+with open("README.md", "r", encoding="utf-8") as f:
     README = f.read()
 
 setup(
