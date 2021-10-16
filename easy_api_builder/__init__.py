@@ -1,2 +1,1 @@
-import APIbuilder
-from APIbuilder import EasyApi
+from .builder import apiBuilder
