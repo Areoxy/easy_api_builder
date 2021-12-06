@@ -47,7 +47,7 @@ builder = apiBuilder()
 builder.create_get_api(json=json_response, path="/")
 
 # Create a Documentation Page for the API
-builder.create_docs(sitename="Cocumentation", sitedescription="Official Documentation for easy_api API", path="/docs", docs="How to use our API? etc...")
+builder.create_docs(sitename="Documentation", sitedescription="Official Documentation for easy_api API", path="/docs", docs="How to use our API? etc...")
 
 # Start the API on defualt Port 80
 builder.start(port=80)
