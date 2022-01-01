@@ -20,11 +20,11 @@ setup(
   author = 'Areo',  
   author_email = 'areo@envyre.de',      
   url = 'https://github.com/Envyre-Development/easy_api_builder',  
-  download_url = 'https://github.com/Envyre-Development/easy_api_builder/archive/refs/tags/easy_api_builder.tar.gz',    
+  download_url = 'https://github.com/areoxy/easy_api_builder/archive/refs/tags/easy_api_builder.tar.gz',    
   keywords = ['api', 'easy', 'api_maker', "requests", "api_builder"],   
   project_urls={
-        "Documentation": "https://github.com/Envyre-Development/easy_api_builder",
-        "Issue tracker": "https://github.com/Envyre-Development/easy_api_builder/issues",
+        "Documentation": "https://github.com/areoxy/easy_api_builder",
+        "Issue tracker": "https://github.com/areoxy/easy_api_builder/issues",
       },
   classifiers=[
     'Development Status :: 4 - Beta',     
