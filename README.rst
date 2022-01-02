@@ -12,7 +12,7 @@ Required modules –> Flask, requests
 Documentation
 =============
 
-Make an API with easy_api_builder:
+Build an API with easy_api_builder:
 
 .. code:: py
 
@@ -24,10 +24,27 @@ Make an API with easy_api_builder:
    }
 
    builder = apiBuilder()
-   builder.create_get_api(json=json_response, url="/")
+   builder.create_get_api(json_response, "/")
    builder.start(port=80)
 
-Make a Documentation Page for your API:
+Build an api with authorization by an api key
+
+.. code:: py
+
+   from easy_api_builder.builder import apiBuilder
+   json_response = \
+   {
+       "easy_api_builder.Version": 0.1,
+       "downloads": "200+"
+   }
+
+   builder = apiBuilder()
+   builder.build_auth_api(json_response, ["key1", "key2], "/api/")
+   builder.start(port=80)
+
+To get a response from the api you must make a requests to this url: http://yourdomain.com/api?key=key1/
+
+Build a Documentation Page for your API:
 
 .. code:: py
 
@@ -45,13 +62,26 @@ Make a Documentation Page for your API:
    builder = apiBuilder()
 
    # Create a GET API
-   builder.create_get_api(json=json_response, path="/")
+   builder.build_get_api(json=json_response, path="/")
 
    # Create a Documentation Page for the API
    builder.create_docs(sitename="Cocumentation", sitedescription="Official Documentation for easy_api API", path="/docs", docs="How to use our API? etc...")
 
    # Start the API on defualt Port 80
    builder.start(port=80)
+
+Build a custom docs page
+
+.. code:: py
+   ...
+   # Define the apiBuilder
+
+   builder = apiBuilder()
+   
+   builder.create_custom_docs("/docs/v3", "customfile.html")
+
+   builder.start()
+
 
 Note: You can create only a Documentation Page too:
 
