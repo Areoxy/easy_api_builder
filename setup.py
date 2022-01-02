@@ -1,13 +1,13 @@
 from distutils.core import setup
 
 
-with open("README.md", "r", encoding="utf-8") as f:
+with open("README.rst", "r", encoding="utf-8") as f:
     README = f.read()
 
 setup(
   name = 'easy_api_builder',         
   packages = ['easy_api_builder'], 
-  version = '0.2',     
+  version = '0.3',     
   license='MIT',     
   package_data={
         'easy_api_builder': ['templates/*']
@@ -15,11 +15,10 @@ setup(
   long_description=README,
   long_description_content_type='text/x-rst',
   include_package_data=True,   
-  description = 'easy_api_builder is an easy way to create you own API in python', 
+  description = 'The easy way to create powerful apis in python', 
   install_requires = ["Flask", "requests"],
-  author = 'Areo',  
-  author_email = 'areo@envyre.de',      
-  url = 'https://github.com/Envyre-Development/easy_api_builder',  
+  author = 'Areo',        
+  url = 'https://github.com/areoxy/easy_api_builder',  
   download_url = 'https://github.com/areoxy/easy_api_builder/archive/refs/tags/easy_api_builder.tar.gz',    
   keywords = ['api', 'easy', 'api_maker', "requests", "api_builder"],   
   project_urls={
@@ -36,5 +35,6 @@ setup(
     'Programming Language :: Python :: 3.7',
     'Programming Language :: Python :: 3.8',
     'Programming Language :: Python :: 3.9',
+    'Programming Language :: Python :: 3.10',
   ]
 )
