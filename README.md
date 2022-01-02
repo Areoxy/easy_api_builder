@@ -1,5 +1,5 @@
-Easy\_API\_Builder 
-=================
+Easy\_API\_Builder
+==================
 
 An Python Package for easily create APIs in Python.
 
@@ -12,9 +12,9 @@ Required modules --\> Flask, requests
 Documentation
 =============
 
-Make an API with easy\_api\_builder:
+Build an API with easy\_api\_builder:
 
-```py
+``` {.py}
 from easy_api_builder.builder import apiBuilder
 json_response = \
 {
@@ -23,13 +23,31 @@ json_response = \
 }
 
 builder = apiBuilder()
-builder.create_get_api(json=json_response, url="/")
+builder.create_get_api(json_response, "/")
 builder.start(port=80)
 ```
 
-Make a Documentation Page for your API:
+Build an api with authorization by an api key
 
-```py
+``` {.py}
+from easy_api_builder.builder import apiBuilder
+json_response = \
+{
+    "easy_api_builder.Version": 0.1,
+    "downloads": "200+"
+}
+
+builder = apiBuilder()
+builder.build_auth_api(json_response, ["key1", "key2], "/api/")
+builder.start(port=80)
+```
+
+To get a response from the api you must make a requests to this url:
+<http://yourdomain.com/api?key=key1/>
+
+Build a Documentation Page for your API:
+
+``` {.py}
 # Import the required Packages
 from easy_api_builder.builder import apiBuilder
 
@@ -44,18 +62,30 @@ json_response = \
 builder = apiBuilder()
 
 # Create a GET API
-builder.create_get_api(json=json_response, path="/")
+builder.build_get_api(json=json_response, path="/")
 
 # Create a Documentation Page for the API
-builder.create_docs(sitename="Documentation", sitedescription="Official Documentation for easy_api API", path="/docs", docs="How to use our API? etc...")
+builder.create_docs(sitename="Cocumentation", sitedescription="Official Documentation for easy_api API", path="/docs", docs="How to use our API? etc...")
 
 # Start the API on defualt Port 80
 builder.start(port=80)
 ```
 
+Build a custom docs page
+
+``` {.py
+...
+# Define the apiBuilder}
+builder = apiBuilder()
+
+builder.create_custom_docs("/docs/v3", "customfile.html")
+
+builder.start()
+```
+
 Note: You can create only a Documentation Page too:
 
-```py
+``` {.py}
 # Import the Required Packages
 from easy_api_builder.builder import apiBuilder
 # Define the apiBuilder
