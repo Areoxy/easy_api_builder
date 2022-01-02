@@ -1,7 +1,7 @@
 Easy\_API\_Builder
 ==================
 
-An Python Package for easily create APIs in Python.
+The easy way to build powerful apis eith python!
 
 `pip install easy-api-builder`
 
