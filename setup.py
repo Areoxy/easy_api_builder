@@ -16,7 +16,7 @@ setup(
   install_requires = ["Flask", "requests"],
   author = 'Areo',        
   url = 'https://github.com/areoxy/easy_api_builder',  
-  download_url = 'https://github.com/areoxy/easy_api_builder/archive/refs/tags/easy_api_builder.tar.gz',    
+  download_url = 'https://github.com/Areoxy/easy_api_builder/releases/tag/easy_api_builder_v0.3.1',    
   keywords = ['api', 'easy', 'api_maker', "requests", "api_builder"],   
   project_urls={
         "Documentation": "https://github.com/areoxy/easy_api_builder",
