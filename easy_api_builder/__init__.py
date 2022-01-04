@@ -1,6 +1,6 @@
 from .builder import apiBuilder, easyRequest
 
-__title__ = "discordSuperUtils"
+__title__ = "easy_api_builder"
 __version__ = "0.3.0"
-__author__ = "Koyashie07 & Adam7100"
+__author__ = "Areo"
 __license__ = "MIT"
