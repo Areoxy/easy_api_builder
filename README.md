@@ -1,4 +1,4 @@
-API_Easy
+easy-api-builder
 =========
 
 An Python Package for easily create APIs in Python
