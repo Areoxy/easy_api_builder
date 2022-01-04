@@ -42,7 +42,8 @@ Build an api with authorization by an api key
    builder.build_auth_api(json_response, ["key1", "key2], "/api/")
    builder.start(port=80)
 
-To get a response from the api you must make a requests to this url: http://yourdomain.com/api?key=key1/
+To get a response from the api you must make a requests to this url:
+http://yourdomain.com/api?key=key1/
 
 Build a Documentation Page for your API:
 
@@ -72,16 +73,15 @@ Build a Documentation Page for your API:
 
 Build a custom docs page
 
-.. code:: py
-   ...
-   # Define the apiBuilder
+.. code:: {.py
 
+   ...
+   # Define the apiBuilder}
    builder = apiBuilder()
-   
+
    builder.create_custom_docs("/docs/v3", "customfile.html")
 
    builder.start()
-
 
 Note: You can create only a Documentation Page too:
 

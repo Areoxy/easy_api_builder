@@ -1,4 +1,5 @@
 setup.py
+README.rst
 easy_api_builder\builder.py
 easy_api_builder\__init__.py
 easy_api_builder\templates\404.html

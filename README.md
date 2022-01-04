@@ -1,107 +1,40 @@
-Easy\_API\_Builder
-==================
+API_Easy
+=========
 
-The easy way to build powerful apis eith python!
+An Python Package for easily create APIs in Python
 
 `pip install easy-api-builder`
 
 Requiremnets: \<= python 3.6
 
-Required modules --\> Flask, requests
+Required modules --> Flask 
 
 Documentation
-=============
+-------------
 
-Build an API with easy\_api\_builder:
+Make an API and Docs with easy_api_builder
 
-``` {.py}
-from easy_api_builder.builder import apiBuilder
-json_response = \
-{
-    "easy_api_builder.Version": 0.1,
-    "downloads": "200+"
+```py
+
+from easy_api_builder import EasyAPI
+
+json = {
+   "api_version": 0.1,
+   "bot_version": 1.2.3
 }
 
-builder = apiBuilder()
-builder.create_get_api(json_response, "/")
-builder.start(port=80)
+app = EasyAPI()
+app.start(json, "<h1>Docs</h1>","Sitename", "siteDescription", "/")
+
 ```
 
-Build an api with authorization by an api key
+The API runs on default localhost port 80 (localhost/)
 
-``` {.py}
-from easy_api_builder.builder import apiBuilder
-json_response = \
-{
-    "easy_api_builder.Version": 0.1,
-    "downloads": "200+"
-}
+You can replace the / with you path to the API Site.
 
-builder = apiBuilder()
-builder.build_auth_api(json_response, ["key1", "key2], "/api/")
-builder.start(port=80)
-```
+The Docs can you find under localhost/docs
 
-To get a response from the api you must make a requests to this url:
-<http://yourdomain.com/api?key=key1/>
+**How to customize?**
 
-Build a Documentation Page for your API:
-
-``` {.py}
-# Import the required Packages
-from easy_api_builder.builder import apiBuilder
-
-json_response = \
-{
-    "easy_api_builder.Version": 0.1,
-    "downloads": "200+"
-}
-
-# Define the apiBuilder
-
-builder = apiBuilder()
-
-# Create a GET API
-builder.build_get_api(json=json_response, path="/")
-
-# Create a Documentation Page for the API
-builder.create_docs(sitename="Cocumentation", sitedescription="Official Documentation for easy_api API", path="/docs", docs="How to use our API? etc...")
-
-# Start the API on defualt Port 80
-builder.start(port=80)
-```
-
-Build a custom docs page
-
-``` {.py
-...
-# Define the apiBuilder}
-builder = apiBuilder()
-
-builder.create_custom_docs("/docs/v3", "customfile.html")
-
-builder.start()
-```
-
-Note: You can create only a Documentation Page too:
-
-``` {.py}
-# Import the Required Packages
-from easy_api_builder.builder import apiBuilder
-# Define the apiBuilder
-
-builder = apiBuilder()
-
-# Create a Documentation Page
-builder.create_docs(sitename="Cocumentation", sitedescription="Official Documentation for easy_api API", path="/docs", docs="How to use our API? etc...")
-
-# Start the API on defualt Port 80
-builder.start(port=80)
-```
-
-You can change the path. For example "/api/v3"
-
-**How to customize the Documentation- and Error Page?**
-
-To customize the Documentation- and error page, go in the package folder
+To customize the Documentation and error page, go in the package folder
 and edit the index.html and the 404.html

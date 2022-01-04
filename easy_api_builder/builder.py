@@ -11,12 +11,16 @@ from werkzeug.exceptions import HTTPException
 from typing import List
 
 
+__all__ = ("apiBuilder", "easyRequest")
+
 class apiBuilder():
     def __init__(self):
         """
         Represents a builder to create APIs
         """
         # Define Flask app
+
+        __slots__ = ()
 
         self.app = Flask(__name__, template_folder='templates')
 
@@ -172,7 +176,7 @@ class easyRequest:
         """
         Represents a builder for web requests
         """
-        pass
+        __slots__ = ()
 
     def get_request(self, url: str):
         """

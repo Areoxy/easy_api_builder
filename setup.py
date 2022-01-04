@@ -6,12 +6,9 @@ with open("README.rst", "r", encoding="utf-8") as f:
 
 setup(
   name = 'easy_api_builder',         
-  packages = ['easy_api_builder'], 
-  version = '0.3',     
+  packages = ['easy_api_builder', "easy_api_builder.templates"], 
+  version = '0.3.1',     
   license='MIT',     
-  package_data={
-        'easy_api_builder': ['templates/*']
-  },
   long_description=README,
   long_description_content_type='text/x-rst',
   include_package_data=True,   
