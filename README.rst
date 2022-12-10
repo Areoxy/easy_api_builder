@@ -1,7 +1,7 @@
 Easy_API_Builder
 ================
 
-An Python Package for easily create APIs in Python.
+A python package to easily create simple rest-apis in python.
 
 ``pip install easy-api-builder``
 
