@@ -1,3 +1,4 @@
+[![Downloads](https://static.pepy.tech/badge/easy-api-builder)](https://pepy.tech/project/easy-api-builder) [![Downloads](https://static.pepy.tech/badge/easy-api-builder/month)](https://pepy.tech/project/easy-api-builder)
 Easy_API_Builder
 ================
 
