@@ -1,0 +1,43 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "easy-api-builder"
+version = "2026.1.1"
+description = "A clean, efficient Flask-based API builder with authentication, routing, and error handling."
+readme = "README.md"
+requires-python = ">=3.9"
+authors = [{name = "Areo", email = "areo@envyre.de"}]
+license = {text = "MIT"}
+keywords = ["api", "flask", "apibuilder", "routing", "key"]
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.9",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "License :: OSI Approved :: MIT License",
+    "Development Status :: 4 - Beta",
+    "Operating System :: OS Independent",
+]
+dependencies = [
+    "flask",
+    "werkzeug",
+    "requests"
+]
+
+[project.urls]
+Homepage = "https://github.com/Areoxy/easy_api_builder"
+Repository = "https://github.com/Areoxy/easy_api_builder"
+"Bug Tracker" = "https://github.com/Areoxy/easy_api_builder/issues"
+
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/easy_api_builder"]
+
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+pythonpath = "src"
+addopts = "-v"
