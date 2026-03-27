@@ -1,4 +1,4 @@
-# easy-api-builder
+[![PyPI Downloads](https://static.pepy.tech/personalized-badge/easy-api-builder?period=total&units=INTERNATIONAL_SYSTEM&left_color=BLACK&right_color=GREEN&left_text=downloads)](https://pepy.tech/projects/easy-api-builder) [![PyPI Downloads](https://static.pepy.tech/personalized-badge/easy-api-builder?period=monthly&units=INTERNATIONAL_SYSTEM&left_color=BLACK&right_color=GREEN&left_text=monthly+downloads)](https://pepy.tech/projects/easy-api-builder)
 
 A lightweight Flask wrapper for building JSON APIs without boilerplate. Register endpoints, authentication, and error handling in a single fluent call, then consume any API with the built-in `easy_request` helper.
 
